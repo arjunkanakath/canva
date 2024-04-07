@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#searchbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    border: 1px solid rgb(131, 131, 131);
+    width: 100%;
+    border-radius: 0.3rem;
+}
+#searchbutton button{
+    padding: 0.3rem 0.5rem;
+    background-color: transparent;
+    border: none;
+}
+#search{
+    padding: 0.4rem 0.5rem;
+    border: none;
+    background-color: transparent;
+}
+.smallheader{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+#menubutton{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    
+}
+.headerleft{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+#profile{
+    width: 2rem;
+    border-radius: 50%;
+}
+.headerright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+   display: none;
+}
+#logo{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+/* Styles for screens between 576px and 767.98px (Small devices) */
+@media (min-width: 576px) {
+    /* Your styles for small screens go here */
+    #logo{
+        display: none;
+    }
+    .headerright{
+        display: none;
+    }
+}
+
+/* Styles for screens between 768px and 991.98px (Medium devices) */
+@media (min-width: 768px) {
+    /* Your styles for medium screens go here */
+    #logo{
+        display: none;
+    }
+    .headerright{
+        display: none;
+    }
+}
+
+/* Styles for screens between 992px and 1199.98px (Large devices) */
+@media (min-width: 992px)  {
+    /* Your styles for large screens go here */
+    #logo{
+        display: flex;
+    }
+    .headerright{
+        display: flex;
+    }
+    #searchbutton{
+        display: none;
+    }
+}
+
+/* Styles for screens 1200px and larger (Extra Large devices) */
+@media (min-width: 1200px) {
+    /* Your styles for extra large screens go here */
+}
